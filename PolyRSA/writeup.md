@@ -12,7 +12,7 @@ sage: n
 sage: m^65537
 1208612545*x^254 + 1003144104*x^253 + ... + 776654074*x + 886398299 
 ```
-The challenge title and the data given makes it clear that we have to solve the standard [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) problem but in the field of polynomials. I believe if some of you are interested you may find [this paper](http://www.diva-portal.se/smash/get/diva2:823505/FULLTEXT01.pdf) useful. I will be covering only the topics aiding in solving the challenge.
+The challenge title and the data given makes it clear that we have to solve the standard [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) problem but in the field of polynomials. I believe if you are interested you may find [this paper](http://www.diva-portal.se/smash/get/diva2:823505/FULLTEXT01.pdf) useful.
 
 Now, we could clearly see that the given polynomials for n and <img src="https://render.githubusercontent.com/render/math?math=c = m^{65537}"> all have there coefficients smaller than the given p this is because the Polynomial ring has been defined in <img src="https://render.githubusercontent.com/render/math?math=\mathbb{Z}_p">. Also you may observe that that degree of c is not more than 254 this is because the further operations are happening in the quotient ring with ideal as n. 
 
